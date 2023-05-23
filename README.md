@@ -1,7 +1,13 @@
 # 리눅스 명령어
 
 ## TOP 명령어
-시스템 프로세스 및 메모리 사용 현황을 실시간으로 출력하는 명령어
+* 시스템 프로세스 및 메모리 사용 현황을 실시간으로 출력하는 명령어로, 작업 관리자와 같은 개념이다.
+***
+### 사용법
+```
+top
+```
+***
 
 ```
 A20203264@cjchun-HP:~$ top
@@ -54,10 +60,21 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.  14165.3 avail Mem
 ```
 
 ## jobs 명령어
-작업이 중지된 상태 또는 백그라운드로 진행 중인 상태를 표시하는 명령어
+* 작업이 중지된 상태 또는 백그라운드로 진행 중인 상태를 표시하는 명령어
+***
+### 사용법
+```
+jobs [옵션]
+```
 
 ## PS 명령어
-현재 실행 중인 프로세스를 보여주는 명령어
+* 현재 실행 중인 프로세스를 보여주는 명령어
+***
+### 사용법
+```
+ps
+```
+***
 
 ```
 A20203264@cjchun-HP:~$ ps
@@ -67,4 +84,27 @@ A20203264@cjchun-HP:~$ ps
 ```
 
 ## kill 명령어
-프로세스에 종료 시그널을 보내는 명령어
+* 프로세스에 종료 시그널을 보내는 명령어
+***
+### 사용법
+```
+kill [옵션] [PID]
+```
+***
+#### kill에서 사용 가능한 명령어 모음
+```
+A20203264@cjchun-HP:~$ kill -l
+ 1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+ 6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+63) SIGRTMAX-1  64) SIGRTMAX
+```
